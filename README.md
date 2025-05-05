@@ -2,8 +2,6 @@
 
 A modern project and task management application inspired by Jira, built with React and TypeScript. View the live demo: [Project Tracker](https://amazing-croissant-43ae05.netlify.app)
 
-![Project Tracker Screenshot](https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
-
 ## Features
 
 - 📋 Kanban board with drag-and-drop task management
@@ -78,14 +76,6 @@ src/
 - Responsive layout
 - Intuitive navigation
 - Real-time updates
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 

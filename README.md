@@ -1,81 +1,104 @@
-# Project Tracker
+# Project Tracker - AI-Generated Project Management Application
 
-A modern project and task management application inspired by Jira, built with React and TypeScript. View the live demo: [Project Tracker](https://amazing-croissant-43ae05.netlify.app)
+A modern, AI-generated project and task management application inspired by Jira, built with React and TypeScript. This application showcases the power of AI-assisted development while delivering a production-ready solution for project management needs.
+
+## About This AI-Generated Application
+
+This project is built using advanced AI technology, demonstrating how AI can assist in creating production-ready applications. Key aspects of the AI generation process include:
+
+- Complete application architecture and structure
+- Implementation of React and TypeScript best practices
+- Secure authentication system using Supabase
+- Modern, responsive UI design with Tailwind CSS
+- Comprehensive documentation and testing setup
+- Database schema design with proper security policies
 
 ## Features
 
-- 📋 Kanban board with drag-and-drop task management
-- 📱 Responsive design that works on desktop and mobile
-- 🔍 Advanced filtering and search capabilities
-- 📊 Multiple view modes (Board/List)
-- 🏷️ Task prioritization and status tracking
-- 👥 User assignment and management
-- 🏷️ Tag support for better organization
-- ⏱️ Time tracking functionality
-- 💬 Commenting system on tasks
+### Current Features
+
+#### Authentication & User Management
+- 🔐 Secure email/password authentication
+- 👤 User profiles with avatars
+- 🔑 Password reset functionality
+
+#### Organization Management
+- 👥 Multi-organization support
+- 👑 Role-based access control (Owner, Admin, Member)
+- 🏢 Organization creation and management
+
+#### Project Management
+- 📋 Project creation and configuration
+- 📊 Kanban board with drag-and-drop
+- 📱 Responsive design for all devices
+- 🔍 Advanced search and filtering
+- 🏷️ Task prioritization
+- 📈 Multiple view modes (Board/List)
 
 ## Technology Stack
 
-- **Frontend Framework**: React 18 with TypeScript
-- **Styling**: Tailwind CSS for modern, responsive design
-- **State Management**: React Hooks and Context
-- **Drag and Drop**: @dnd-kit for smooth drag-and-drop functionality
-- **Icons**: Lucide React for beautiful, consistent icons
-- **Build Tool**: Vite for fast development and optimized builds
-- **Deployment**: Netlify for reliable hosting
+### Core Technologies
+- ⚛️ React 18.3 with TypeScript 5.5
+- 🎨 Tailwind CSS 3.4
+- 🗃️ Supabase for auth and database
+- 🛠️ Vite 5.4 for development
+
+### Key Libraries
+- 🔄 @dnd-kit/core for drag-and-drop
+- 🎯 React Context for state management
+- 🎨 Lucide React for icons
+- 📱 Modern CSS features and Flexbox
 
 ## Getting Started
 
 1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/project-tracker.git
+   ```
+
 2. Install dependencies:
    ```bash
    npm install
    ```
-3. Start the development server:
+
+3. Set up environment variables:
+   ```bash
+   cp .env.example .env
+   ```
+   Update with your Supabase credentials
+
+4. Start the development server:
    ```bash
    npm run dev
    ```
-4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+5. Open [http://localhost:5173](http://localhost:5173) in your browser
 
 ## Project Structure
 
 ```
 src/
-├── components/         # React components
-│   ├── dashboard/     # Dashboard-related components
-│   ├── layout/        # Layout components
-│   ├── task/         # Task-related components
-│   └── ui/           # Reusable UI components
-├── data/             # Mock data for demonstration
-├── types/            # TypeScript type definitions
-├── utils/            # Utility functions
-└── App.tsx           # Main application component
+├── components/          # React components
+│   ├── auth/           # Authentication components
+│   ├── dashboard/      # Dashboard components
+│   ├── layout/         # Layout components
+│   ├── organization/   # Organization management
+│   ├── task/          # Task-related components
+│   └── ui/            # Reusable UI components
+├── contexts/          # React contexts
+├── lib/               # Library configurations
+├── types/             # TypeScript definitions
+├── utils/             # Utility functions
+└── App.tsx            # Main component
 ```
 
-## Key Features Explained
+## Database Schema
 
-### Kanban Board
-- Drag-and-drop interface for task management
-- Visual task organization by status
-- Real-time updates when moving tasks
-
-### Task Management
-- Create, edit, and delete tasks
-- Set priority levels and status
-- Assign tasks to team members
-- Add tags for categorization
-- Track time estimates and spent time
-
-### Filtering and Search
-- Filter tasks by status, priority, and assignee
-- Search tasks by title and description
-- Toggle between board and list views
-
-### User Interface
-- Clean, modern design
-- Responsive layout
-- Intuitive navigation
-- Real-time updates
+The application uses Supabase with the following main tables:
+- `organizations`: Organization management
+- `organization_members`: User roles and permissions
+- `profiles`: User profiles
+- `projects`: Project details and configuration
 
 ## License
 
